@@ -54,11 +54,15 @@ def main(argv=None):
     ap.add_argument("--bot", default="ejemplo_bot.py")
     ap.add_argument("--datos", default="train.jsonl")
     ap.add_argument("--solo-escenarios", action="store_true",
-                    help="solo los casos de varias fuentes (ids N… y s…), los que más se parecen al test")
+                    help="solo los casos de varias fuentes (ids N, s, T, G, R, H), los que más se parecen al test")
+    ap.add_argument("--prefijo", default=None,
+                    help="solo los casos cuyo id empieza por este prefijo (p. ej. H: los más parecidos al test)")
     args = ap.parse_args(argv)
     casos = [json.loads(l) for l in open(args.datos, encoding="utf-8") if l.strip()]
     if args.solo_escenarios:
-        casos = [c for c in casos if c["id"][0] in "Ns"]
+        casos = [c for c in casos if c["id"][0] in "NsTGRH"]
+    if args.prefijo:
+        casos = [c for c in casos if c["id"].startswith(args.prefijo)]
     r = evaluar(_cargar_bot(args.bot), casos)
     print(f"{len(casos)} casos · puntuación {r['puntuacion']:.3f} · AUROC {r['auroc']:.3f} · "
           f"{r['fp']} falsas alarmas · {r['fn']} alucinaciones escapadas")

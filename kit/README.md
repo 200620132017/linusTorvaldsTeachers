@@ -76,8 +76,10 @@ a quién pertenece cada dato) para cubrir lo que el modelo no ve.
    python evaluar_local.py --bot ejemplo_bot.py --datos train.jsonl
    ```
 2. Copiad `ejemplo_bot.py` a `mi_bot.py` y mejoradlo. Medid cada cambio con
-   `evaluar_local.py`. La opción `--solo-escenarios` usa solo los casos con varias
-   fuentes (ids `N…` y `s…`), que son los que más se parecen al test. Los `N…` son los más parecidos de todos.
+   `evaluar_local.py`. **Ojo: el train no es igual que el test.** Los casos con id `H…` se
+   escribieron como el test; el resto del train es más fácil. Si validáis y
+   calibráis con todo el train, os vais a confiar: medid sobre todo con
+   `--prefijo H` (y validad sin entrenar sobre esos mismos casos).
 
 ## Cómo entregáis
 
