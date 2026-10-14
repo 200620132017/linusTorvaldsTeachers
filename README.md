@@ -14,11 +14,10 @@ de descarga) para abrirlo en Word.
 
 ## 2. Descargad el kit
 
-- Sin git: botón verde **Code → Download ZIP**, o descargad directamente
-  [`El_Guardian_kit_alumnos.zip`](El_Guardian_kit_alumnos.zip).
+- Sin git: botón verde **Code → Download ZIP** y descomprimidlo.
 - Con git: `git clone https://github.com/jotajota1302/material.git`
 
-Todo el código y los datos están en la carpeta [`kit/`](kit/) (el zip contiene lo mismo). Leed [`kit/README.md`](kit/README.md) (reglas,
+Todo el código y los datos están en la carpeta [`kit/`](kit/). Leed [`kit/README.md`](kit/README.md) (reglas,
 señales, métrica) y [`kit/EJEMPLOS.md`](kit/EJEMPLOS.md) (qué cuenta como alucinación).
 
 | Fichero | Para qué |
@@ -49,7 +48,7 @@ Copiad `ejemplo_bot.py` a `mi_bot.py`, mejoradlo y medid cada cambio con `evalua
 | **18:00** | Cierre de entregas. Se revela la clasificación final. |
 | Día 2 | El top-10 reproduce su bot sobre un lote nuevo y lo defiende ante el jurado. |
 
-A las 14:00 actualizad el repositorio (`git pull`, o volved a descargar el ZIP).
+A las 14:00 actualizad el repositorio (`git pull`), o descargad solo `kit/giro_publico.jsonl`.
 
 ## 5. Cómo entregar
 
