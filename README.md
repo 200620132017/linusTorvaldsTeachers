@@ -41,14 +41,25 @@ Copiad `ejemplo_bot.py` a `mi_bot.py`, mejoradlo y medid cada cambio con `evalua
 
 ## 4. Calendario
 
+**Jueves 15 de octubre**
+
 | Hora | Qué pasa |
 |---|---|
-| Inicio | Material disponible. Hasta 3 entregas (solo test). |
-| **14:00** | **Giro:** aparecerá aquí `kit/giro_publico.jsonl`. Desde entonces cada entrega lleva test + giro en un solo CSV. Hasta 3 entregas más. |
-| **18:00** | Cierre de entregas. Se revela la clasificación final. |
-| Día 2 | El top-10 reproduce su bot sobre un lote nuevo y lo defiende ante el jurado. |
+| 10:00 | Presentación técnica del reto. Material disponible. Hasta 3 entregas (solo test). |
+| 14:15 | Comida. |
+| **15:30** | **Giro:** aparecerá aquí `kit/giro_publico.jsonl`. Desde entonces cada entrega lleva test + giro en un solo CSV. Hasta 3 entregas más. |
+| **19:00** | Cierre de entregas. Se revela la clasificación final. |
+| 19:00–20:15 | Los 5 primeros reproducen su bot sobre un lote nuevo delante del jurado. |
+| **20:30** | Anuncio de los finalistas. |
 
-A las 14:00 actualizad el repositorio (`git pull`), o descargad solo `kit/giro_publico.jsonl`.
+**Viernes 16 de octubre**
+
+| Hora | Qué pasa |
+|---|---|
+| 9:30 | Pitch de los finalistas (5 minutos), en el Salón de Actos. |
+| 12:00 | Entrega de premios y clausura. |
+
+A las 15:30 actualizad el repositorio (`git pull`), o descargad solo `kit/giro_publico.jsonl`.
 
 ## 5. Cómo entregar
 

@@ -3,7 +3,7 @@ estándar: no instala ni ejecuta ningún modelo.
 
   python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl --salida predicciones.csv
 
-Tras el giro (14:00), pasad los dos ficheros a la vez (un solo CSV con todo):
+Tras el giro (15:30), pasad los dos ficheros a la vez (un solo CSV con todo):
 
   python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl giro_publico.jsonl --salida predicciones.csv
 
@@ -40,7 +40,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--bot", default="ejemplo_bot.py")
     ap.add_argument("--test", required=True, nargs="+",
-                    help="test_publico.jsonl (y giro_publico.jsonl tras las 14:00)")
+                    help="test_publico.jsonl (y giro_publico.jsonl tras las 15:30)")
     ap.add_argument("--salida", default="predicciones.csv")
     args = ap.parse_args(argv)
 

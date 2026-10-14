@@ -18,7 +18,7 @@ portátil.
 | `evaluar_local.py` | Mide vuestro bot sobre `train.jsonl` con la misma métrica del leaderboard. |
 | `generar_predicciones.py` | Genera el CSV que entregáis. |
 | `train.jsonl` | Casos etiquetados, con sus señales, para desarrollar y calibrar. |
-| `test_publico.jsonl` | Los casos que hay que puntuar (sin etiquetas). A las 14:00 recibiréis `giro_publico.jsonl`. |
+| `test_publico.jsonl` | Los casos que hay que puntuar (sin etiquetas). A las 15:30 recibiréis `giro_publico.jsonl`. |
 
 ## Qué construís
 
@@ -87,7 +87,7 @@ Ejecutáis vuestro bot **en vuestra máquina** y entregáis un fichero de predic
 python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl --salida predicciones.csv
 ```
 
-Desde las 14:00, con el giro publicado, generáis un único CSV con los dos ficheros:
+Desde las 15:30, con el giro publicado, generáis un único CSV con los dos ficheros:
 
 ```
 python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl giro_publico.jsonl --salida predicciones.csv
@@ -130,7 +130,8 @@ cierre. Afinar el bot a base de subir variantes y mirar el leaderboard no os
 servirá: un bot que generaliza puntúa igual en las dos mitades.
 
 **Nota final:** 60 × vuestra puntuación final (mínimo 0) + hasta 40 puntos del
-jurado. Defienden ante el jurado los 10 primeros de la clasificación final.
+jurado. Los 5 primeros de la clasificación final son los finalistas: se anuncian
+el jueves a las 20:30 y presentan su pitch (5 minutos) el viernes a las 9:30.
 
 ## Reglas
 
@@ -145,9 +146,10 @@ jurado. Defienden ante el jurado los 10 primeros de la clasificación final.
 - **Podéis leer** `test_publico.jsonl` para entender el formato. **No podéis**
   etiquetarlo a mano ni meter en el código reglas o datos pensados para casos
   concretos del test.
-- **Reproducción (día 2):** los 10 primeros ejecutan su `mi_bot.py` delante del
-  jurado sobre un **lote nuevo** que nadie ha visto, del mismo tipo que test y
-  giro. Un bot honesto puntúa parecido. Si el resultado cae muy por debajo de
+- **Reproducción (jueves, de 19:00 a 20:15):** los 5 primeros ejecutan su
+  `mi_bot.py` delante del jurado sobre un **lote nuevo** que nadie ha visto, del
+  mismo tipo que test y giro. Quedaos hasta el anuncio de las 20:30: si un equipo
+  queda descalificado, entra el siguiente. Un bot honesto puntúa parecido. Si el resultado cae muy por debajo de
   vuestra puntuación final, o el código no corresponde con lo entregado, se
   descalifica la entrega.
 
@@ -181,5 +183,5 @@ El criterio completo que usamos para etiquetar está en `EJEMPLOS.md`.
   en la fuente que cita…).
 - **No os fiéis de atajos.** La longitud de la respuesta, los superlativos o las
   negaciones no predicen la etiqueta en el test.
-- **El giro de las 14:00 cambia de terreno:** documentos técnicos y legales y
+- **El giro de las 15:30 cambia de terreno:** documentos técnicos y legales y
   respuestas más largas. Lo que solo funciona en el formato del train caerá ahí.

@@ -15,17 +15,17 @@ entregas/
 - `NOMBRE_DEL_EQUIPO`: el nombre que os asigne la organización, **siempre el mismo**,
   en minúsculas, sin espacios ni tildes (por ejemplo `los_guardianes`).
 - `entrega_1`, `entrega_2`… numeradas en orden. Cupo: **3 antes del giro** (solo test)
-  y **3 después** (test + giro). Una entrega rechazada por formato no gasta cupo.
+  y **3 después** (test + giro). Última entrega: **19:00**. Una entrega rechazada por formato no gasta cupo.
 - No modifiquéis carpetas de otros equipos ni entregas anteriores.
 
 ## 1. Generad el CSV (siempre con el script, nunca con Excel)
 
-Antes de las 14:00:
+Antes del giro (15:30):
 ```
 python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl --salida predicciones.csv
 ```
 
-Desde las 14:00 (test + giro en un único CSV):
+Desde las 15:30 (test + giro en un único CSV):
 ```
 python generar_predicciones.py --bot mi_bot.py --test test_publico.jsonl giro_publico.jsonl --salida predicciones.csv
 ```
