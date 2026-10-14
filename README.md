@@ -18,7 +18,7 @@ de descarga) para abrirlo en Word.
   [`El_Guardian_kit_alumnos.zip`](El_Guardian_kit_alumnos.zip).
 - Con git: `git clone https://github.com/jotajota1302/material.git`
 
-Todo está en la carpeta [`kit/`](kit/). Leed [`kit/README.md`](kit/README.md) (reglas,
+Todo el código y los datos están en la carpeta [`kit/`](kit/) (el zip contiene lo mismo). Leed [`kit/README.md`](kit/README.md) (reglas,
 señales, métrica) y [`kit/EJEMPLOS.md`](kit/EJEMPLOS.md) (qué cuenta como alucinación).
 
 | Fichero | Para qué |

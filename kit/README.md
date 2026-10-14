@@ -19,7 +19,6 @@ portátil.
 | `generar_predicciones.py` | Genera el CSV que entregáis. |
 | `train.jsonl` | Casos etiquetados, con sus señales, para desarrollar y calibrar. |
 | `test_publico.jsonl` | Los casos que hay que puntuar (sin etiquetas). A las 14:00 recibiréis `giro_publico.jsonl`. |
-| `El_Guardian_Reto_Alumnos.docx` | Presentación del reto. |
 
 ## Qué construís
 
